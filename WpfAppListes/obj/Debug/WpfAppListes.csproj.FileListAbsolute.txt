@@ -16,3 +16,13 @@ C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\obj\Debug\WpfAppListes.
 C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\obj\Debug\WpfAppListes.pdb
 C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\bin\Debug\Images\Durkheim.jpg
 C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\bin\Debug\MaDatabaseAdherent.mdf
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\bin\Debug\MaDatabaseAdherent_log.ldf
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\bin\Debug\Model\MaDatabaseAdherent.mdf
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\bin\Debug\Model\MaDatabaseAdherent_log.ldf
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\bin\Debug\EntityFramework.dll
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\bin\Debug\EntityFramework.xml
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppListes\obj\Debug\WpfAppListes.csproj.CopyComplete

@@ -20,7 +20,7 @@
         <TextBox x:Name="txtPrenom"  HorizontalAlignment="Left" Height="33" Margin="260,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
         <Image x:Name="ImgPhoto" HorizontalAlignment="Left" Height="125" Margin="584,37,0,0" VerticalAlignment="Top" Source="/Images/Durkheim.jpg" Width="127"  Stretch="Fill" MouseDown="ChargerImage_Click"/>
 
-        <ListView ItemsSource="{Binding Adherents}" HorizontalAlignment="Left" Height="164" Margin="0,255,0,0" VerticalAlignment="Top" Width="782" Background="#FFDE6474">
+        <ListView ItemsSource="{Binding Adherents}" HorizontalAlignment="Left" Height="164" Margin="0,255,0,0" VerticalAlignment="Top" Width="792" Background="#FFDE6474">
             <!--<ListView.View>
                 <GridView>
                     <GridViewColumn Header="Numéro" Width="100" DisplayMemberBinding="{Binding Path=Numero}"/>
@@ -45,5 +45,6 @@
         </ListView>
 
         <Button Content="Ajouter" HorizontalAlignment="Left" Height="24" Margin="260,204,0,0" VerticalAlignment="Top" Width="186" Click="AjouterAdherent_Click"/>
+        <Button Content="Test DB" HorizontalAlignment="Left" Margin="446,206,0,0" VerticalAlignment="Top" Width="155" Click="TestDB_Click"/>
     </Grid>
 </Window>

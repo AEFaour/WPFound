@@ -69,7 +69,34 @@ namespace WpfAppListes
             }
 
         }
+        private void TestAccesDB()
+        {
+            // EFAdherentEntities --> Le conteneur d'entité du fichier edmx
+            // le conteneur d'entité est gééralment appelé le DataContext dtc
+            EFAdherentEntities dtc = new EFAdherentEntities();
+            // pour ajouter une activité
+            Activity activite = new Activity() { libelle = "Foot" };
+
+            dtc.Activity.Add(activite);
+            // sauvegarder dans la base
+            int i = dtc.SaveChanges();
+            string _msg = (i > 0) ? "Enregistré " : "Non enregistré";
+            MessageBox.Show(_msg);
+
+            foreach (var item in dtc.Activity)
+            {
+                MessageBox.Show(item.libelle);
+
+            }
+
+            dtc.Dispose();
 
 
+        }
+
+        private void TestDB_Click(object sender, RoutedEventArgs e)
+        {
+            TestAccesDB();
+        }
     }
 }

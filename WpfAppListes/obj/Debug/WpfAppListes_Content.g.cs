@@ -9,5 +9,11 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/durkheim.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("madatabaseadherent.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("madatabaseadherent_log.ldf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/efmadb.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/efmadb.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/madatabaseadherent.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/madatabaseadherent_log.ldf")]
 
 
