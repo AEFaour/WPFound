@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfAppBinding2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppBinding2"
+        mc:Ignorable="d"
+        Title="MainWindow - Binding 2" Height="450" Width="800" Background="#FFE85858" FontFamily="Adobe Caslon Pro Bold">
+    <Grid>
+        <Label Content="Numero" HorizontalAlignment="Left" Height="40" Margin="79,22,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="263,22,0,0" TextWrapping="Wrap" Text="{Binding Path=Id, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="124"/>
+        <Label Content="Nom" HorizontalAlignment="Left" Height="40" Margin="79,107,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="263,107,0,0" TextWrapping="Wrap" Text="{Binding Path=Nom, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="124"/>
+        <Label Content="Marque" HorizontalAlignment="Left" Height="40" Margin="79,62,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="263,66,0,0" TextWrapping="Wrap" Text="{Binding Path=Marque, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="124"/>
+        <Button Content="Modif" HorizontalAlignment="Left" Height="19" Margin="485,107,0,0" VerticalAlignment="Top" Width="120" Click="ModifVoiture"/>
+
+    </Grid>
+</Window>

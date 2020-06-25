@@ -1,0 +1,15 @@
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\bin\Debug\WpfAppNotifyPropertyChanged.exe.config
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\bin\Debug\WpfAppNotifyPropertyChanged.exe
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\bin\Debug\WpfAppNotifyPropertyChanged.pdb
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\obj\Debug\WpfAppNotifyPropertyChanged.csprojAssemblyReference.cache
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\obj\Debug\MainWindow.g.cs
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\obj\Debug\App.g.cs
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\obj\Debug\WpfAppNotifyPropertyChanged_MarkupCompile.cache
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\obj\Debug\WpfAppNotifyPropertyChanged_MarkupCompile.lref
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\obj\Debug\MainWindow.baml
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\obj\Debug\WpfAppNotifyPropertyChanged.g.resources
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\obj\Debug\WpfAppNotifyPropertyChanged.Properties.Resources.resources
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\obj\Debug\WpfAppNotifyPropertyChanged.csproj.GenerateResource.cache
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\obj\Debug\WpfAppNotifyPropertyChanged.csproj.CoreCompileInputs.cache
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\obj\Debug\WpfAppNotifyPropertyChanged.exe
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfAppNotifyPropertyChanged\obj\Debug\WpfAppNotifyPropertyChanged.pdb

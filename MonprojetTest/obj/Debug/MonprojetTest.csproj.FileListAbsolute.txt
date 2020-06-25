@@ -1,0 +1,15 @@
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\bin\Debug\MonprojetTest.exe.config
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\bin\Debug\MonprojetTest.exe
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\bin\Debug\MonprojetTest.pdb
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\obj\Debug\MonprojetTest.csprojAssemblyReference.cache
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\obj\Debug\MainWindow.g.cs
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\obj\Debug\App.g.cs
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\obj\Debug\MonprojetTest_MarkupCompile.cache
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\obj\Debug\MonprojetTest_MarkupCompile.lref
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\obj\Debug\MainWindow.baml
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\obj\Debug\MonprojetTest.g.resources
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\obj\Debug\MonprojetTest.Properties.Resources.resources
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\obj\Debug\MonprojetTest.csproj.GenerateResource.cache
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\obj\Debug\MonprojetTest.csproj.CoreCompileInputs.cache
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\obj\Debug\MonprojetTest.exe
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\MonprojetTest\obj\Debug\MonprojetTest.pdb

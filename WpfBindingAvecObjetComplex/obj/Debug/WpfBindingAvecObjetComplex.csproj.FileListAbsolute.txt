@@ -1,0 +1,15 @@
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\bin\Debug\WpfBindingAvecObjetComplex.exe.config
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\bin\Debug\WpfBindingAvecObjetComplex.exe
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\bin\Debug\WpfBindingAvecObjetComplex.pdb
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\obj\Debug\WpfBindingAvecObjetComplex.csprojAssemblyReference.cache
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\obj\Debug\MainWindow.g.cs
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\obj\Debug\App.g.cs
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\obj\Debug\WpfBindingAvecObjetComplex_MarkupCompile.cache
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\obj\Debug\WpfBindingAvecObjetComplex_MarkupCompile.lref
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\obj\Debug\MainWindow.baml
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\obj\Debug\WpfBindingAvecObjetComplex.g.resources
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\obj\Debug\WpfBindingAvecObjetComplex.Properties.Resources.resources
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\obj\Debug\WpfBindingAvecObjetComplex.csproj.GenerateResource.cache
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\obj\Debug\WpfBindingAvecObjetComplex.csproj.CoreCompileInputs.cache
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\obj\Debug\WpfBindingAvecObjetComplex.exe
+C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfBindingAvecObjetComplex\obj\Debug\WpfBindingAvecObjetComplex.pdb
