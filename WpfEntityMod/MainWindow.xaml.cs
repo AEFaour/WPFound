@@ -50,5 +50,12 @@ namespace WpfEntityMod
             adherent adherent = new adherent() { activity = a, nom = _nom, prenom = _prenom, photo = _Photo };
             GestionAbonnes.AjouterAdherent(adherent);
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            adherent a = (adherent)IsbAdherent.SelectedItem;
+            MessageBox.Show(a.nom + " " + a.prenom);
+        }
     }
 }

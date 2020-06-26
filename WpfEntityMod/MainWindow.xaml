@@ -13,14 +13,31 @@
         <Label Content="Prénom" HorizontalAlignment="Left" Margin="60,47,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.441,0.478"/>
         <Label Content="Activite" HorizontalAlignment="Left" Margin="60,83,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNom" HorizontalAlignment="Left" Height="29" Margin="195,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtPrenom" HorizontalAlignment="Left" Height="29" Margin="195,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPrenom" HorizontalAlignment="Left" Height="29" Margin="195,46,0,0" TextWrapping="Wrap" Text="{Binding ElementName=cbbActivite, Path=SelectedItem.nom}" VerticalAlignment="Top" Width="120"/>
         <!--dropDown pour les activités-->
         <ComboBox x:Name="cbbActivite" ItemsSource="{Binding Path=Activities, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                  DisplayMemberPath="libelle" HorizontalAlignment="Left" Margin="195,87,0,0" VerticalAlignment="Top" Width="120"/>
         <Image x:Name="imgPhoto" HorizontalAlignment="Left" Height="128" Margin="487,0,0,0" VerticalAlignment="Top" Width="120" Source="images/Durkheim.jpg" Stretch="Fill"/>
         <Label Content="Ajouter une photo" HorizontalAlignment="Center" Height="36" Margin="636,55,26,0" VerticalAlignment="Top" Width="130" MouseDown="AjouterPhoto_Click"/>
-        <ListBox HorizontalAlignment="Left" Height="291" Margin="0,128,0,0" VerticalAlignment="Top" Width="792" Background="#FFEE5F79"/>
+        <ListBox x:Name="IsbAdherent" HorizontalAlignment="Left" Height="291" Margin="0,133,0,-5" VerticalAlignment="Top" Width="792" Background="#FFEE5F79"
+                 ItemsSource="{Binding Path=Adherents}" SelectionChanged="ListBox_SelectionChanged">
+            <!--Utiliser la propriété ItemTemplate et ensuite dataTemplate-->
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="80" Content="{Binding id }"></Label>
+                        <Label Width="80" Content="{Binding nom }"></Label>
+                        <Label Width="80" Content="{Binding prenom }"></Label>
+                        <!--Si l'adherent peut s'abonner à plusieurs activitiés alors on peut 
+                        utilise ic un Combobx-->
+                        <Label Width="100" Content="{Binding activity.libelle  }"></Label>
+                        <Image Source="{Binding photo }" Width="40" Height="40" Stretch="Fill"></Image>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <Button Content="Ajouter" HorizontalAlignment="Left" Height="28" Margin="352,83,0,0" VerticalAlignment="Top" Width="102" Click="AjouterAdherent_Click"/>
+        <Button Content="Modifier" HorizontalAlignment="Left" Height="25" Margin="356,28,0,0" VerticalAlignment="Top" Width="98"/>
 
 
 
