@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="adherentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="activity">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="libelle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="adherent">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idActivity" Type="int" />
+    <Property Name="nom" Type="nvarchar" MaxLength="50" />
+    <Property Name="prenom" Type="nvarchar" MaxLength="50" />
+    <Property Name="photo" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK__adherent__idActi__3D5E1FD2">
+    <End Role="activity" Type="Self.activity" Multiplicity="0..1" />
+    <End Role="adherent" Type="Self.adherent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="activity">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="adherent">
+        <PropertyRef Name="idActivity" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="adherentModelStoreContainer">
+    <EntitySet Name="activity" EntityType="Self.activity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="adherent" EntityType="Self.adherent" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__adherent__idActi__3D5E1FD2" Association="Self.FK__adherent__idActi__3D5E1FD2">
+      <End Role="activity" EntitySet="activity" />
+      <End Role="adherent" EntitySet="adherent" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

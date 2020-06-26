@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="adherentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="activity">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="libelle" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="adherent">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idActivity" Type="int" />
+          <Property Name="nom" Type="nvarchar" MaxLength="50" />
+          <Property Name="prenom" Type="nvarchar" MaxLength="50" />
+          <Property Name="photo" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <Association Name="FK__adherent__idActi__3D5E1FD2">
+          <End Role="activity" Type="Self.activity" Multiplicity="0..1" />
+          <End Role="adherent" Type="Self.adherent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="activity">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="adherent">
+              <PropertyRef Name="idActivity" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="adherentModelStoreContainer">
+          <EntitySet Name="activity" EntityType="Self.activity" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="adherent" EntityType="Self.adherent" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__adherent__idActi__3D5E1FD2" Association="Self.FK__adherent__idActi__3D5E1FD2">
+            <End Role="activity" EntitySet="activity" />
+            <End Role="adherent" EntitySet="adherent" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="adherentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="adherentEntities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="activity" EntityType="adherentModel.activity" />
+          <EntitySet Name="adherent" EntityType="adherentModel.adherent" />
+          <AssociationSet Name="FK__adherent__idActi__3D5E1FD2" Association="adherentModel.FK__adherent__idActi__3D5E1FD2">
+            <End Role="activity" EntitySet="activity" />
+            <End Role="adherent" EntitySet="adherent" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="activity">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="adherent" Relationship="adherentModel.FK__adherent__idActi__3D5E1FD2" FromRole="activity" ToRole="adherent" />
+        </EntityType>
+        <EntityType Name="adherent">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idActivity" Type="Int32" />
+          <Property Name="nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="photo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="activity" Relationship="adherentModel.FK__adherent__idActi__3D5E1FD2" FromRole="adherent" ToRole="activity" />
+        </EntityType>
+        <Association Name="FK__adherent__idActi__3D5E1FD2">
+          <End Type="adherentModel.activity" Role="activity" Multiplicity="0..1" />
+          <End Type="adherentModel.adherent" Role="adherent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="activity">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="adherent">
+              <PropertyRef Name="idActivity" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="adherentModelStoreContainer" CdmEntityContainer="adherentEntities" >
+          <EntitySetMapping Name="activity">
+            <EntityTypeMapping TypeName="adherentModel.activity">
+              <MappingFragment StoreEntitySet="activity">
+                <ScalarProperty Name="libelle" ColumnName="libelle" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="adherent">
+            <EntityTypeMapping TypeName="adherentModel.adherent">
+              <MappingFragment StoreEntitySet="adherent">
+                <ScalarProperty Name="photo" ColumnName="photo" />
+                <ScalarProperty Name="prenom" ColumnName="prenom" />
+                <ScalarProperty Name="nom" ColumnName="nom" />
+                <ScalarProperty Name="idActivity" ColumnName="idActivity" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Aucun" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

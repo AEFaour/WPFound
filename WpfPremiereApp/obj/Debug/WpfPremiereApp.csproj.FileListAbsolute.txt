@@ -1,7 +1,6 @@
 C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfPremiereApp\bin\Debug\WpfPremiereApp.exe.config
 C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfPremiereApp\bin\Debug\WpfPremiereApp.exe
 C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfPremiereApp\bin\Debug\WpfPremiereApp.pdb
-C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfPremiereApp\obj\Debug\WpfPremiereApp.csprojAssemblyReference.cache
 C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfPremiereApp\obj\Debug\MainWindow.g.cs
 C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfPremiereApp\obj\Debug\App.g.cs
 C:\Users\Anas FAOUR\source\repos\SemaineWPF\WpfPremiereApp\obj\Debug\WpfPremiereApp_MarkupCompile.cache

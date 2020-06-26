@@ -66,4 +66,3 @@ namespace WpfBindingAvecObjetComplex.Model
         #endregion Propriétés
     }
 }
-e

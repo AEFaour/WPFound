@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfEntityMod.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+        xmlns:vm="clr-namespace:WpfEntityMod.ViewModel"
+        xmlns:local="clr-namespace:WpfEntityMod"
+        mc:Ignorable="d"
+        Title="MainWindow - Entity" Height="450" Width="800" Background="#FFF14179" FontFamily="Times New Roman" FontSize="16">
+
+    <Grid>
+        <Label Content="Nom" HorizontalAlignment="Left" Margin="68,13,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prénom" HorizontalAlignment="Left" Margin="60,47,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.441,0.478"/>
+        <Label Content="Activite" HorizontalAlignment="Left" Margin="60,83,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNom" HorizontalAlignment="Left" Height="29" Margin="195,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPrenom" HorizontalAlignment="Left" Height="29" Margin="195,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <!--dropDown pour les activités-->
+        <ComboBox x:Name="cbbActivite" ItemsSource="{Binding Path=Activities, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                 DisplayMemberPath="libelle" HorizontalAlignment="Left" Margin="195,87,0,0" VerticalAlignment="Top" Width="120"/>
+        <Image x:Name="imgPhoto" HorizontalAlignment="Left" Height="128" Margin="487,0,0,0" VerticalAlignment="Top" Width="120" Source="images/Durkheim.jpg" Stretch="Fill"/>
+        <Label Content="Ajouter une photo" HorizontalAlignment="Center" Height="36" Margin="636,55,26,0" VerticalAlignment="Top" Width="130" MouseDown="AjouterPhoto_Click"/>
+        <ListBox HorizontalAlignment="Left" Height="291" Margin="0,128,0,0" VerticalAlignment="Top" Width="792" Background="#FFEE5F79"/>
+        <Button Content="Ajouter" HorizontalAlignment="Left" Height="28" Margin="352,83,0,0" VerticalAlignment="Top" Width="102" Click="AjouterAdherent_Click"/>
+
+
+
+    </Grid>
+</Window>
